@@ -1,5 +1,5 @@
 @import "tailwindcss";
- 
+
 @theme {
   --color-profundo: #1a2a3a;
   --color-marino: #1b4b6b;
@@ -13,21 +13,18 @@
   --color-siena: #7a6652;
   --font-display: "Playfair Display", Georgia, serif;
 }
- 
-/* ── Base ── */
+
 body {
   background-color: var(--color-arena);
   color: var(--color-profundo);
   font-family: system-ui, -apple-system, sans-serif;
   margin: 0;
 }
- 
-/* ── Tipografía display ── */
+
 .font-display {
   font-family: var(--font-display);
 }
- 
-/* ── Inputs y selects ── */
+
 .campo-input {
   display: block;
   width: 100%;
@@ -40,17 +37,16 @@ body {
   outline: none;
   transition: border-color 0.15s, box-shadow 0.15s;
 }
- 
+
 .campo-input:focus {
   border-color: var(--color-marino);
   box-shadow: 0 0 0 3px rgba(27, 75, 107, 0.15);
 }
- 
+
 .campo-input::placeholder {
   color: #b0a090;
 }
- 
-/* ── Etiquetas ── */
+
 .etiqueta {
   display: block;
   font-size: 0.75rem;
@@ -60,8 +56,7 @@ body {
   color: var(--color-siena);
   margin-bottom: 0.375rem;
 }
- 
-/* ── Botón primario (terracota) ── */
+
 .boton-primario {
   display: inline-flex;
   align-items: center;
@@ -76,12 +71,11 @@ body {
   cursor: pointer;
   transition: background-color 0.15s, transform 0.1s;
 }
- 
+
 .boton-primario:hover { background-color: #a8441f; }
 .boton-primario:active { transform: scale(0.97); }
 .boton-primario:disabled { opacity: 0.55; cursor: not-allowed; }
- 
-/* ── Botón secundario (borde marino) ── */
+
 .boton-secundario {
   display: inline-flex;
   align-items: center;
@@ -97,11 +91,10 @@ body {
   cursor: pointer;
   transition: background-color 0.15s, color 0.15s;
 }
- 
+
 .boton-secundario:hover { background-color: var(--color-marino); color: #fff; }
 .boton-secundario:disabled { opacity: 0.55; cursor: not-allowed; }
- 
-/* ── Badge de estado ── */
+
 .insignia-estado {
   display: inline-flex;
   align-items: center;
@@ -114,20 +107,14 @@ body {
   border-radius: 9999px;
   border: 1px solid transparent;
 }
- 
-/* ── Skeleton de carga ── */
+
 .esqueleto {
-  background: linear-gradient(
-    90deg,
-    var(--color-lino) 25%,
-    #ede6d6 50%,
-    var(--color-lino) 75%
-  );
+  background: linear-gradient(90deg, var(--color-lino) 25%, #ede6d6 50%, var(--color-lino) 75%);
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
   border-radius: 0.5rem;
 }
- 
+
 @keyframes shimmer {
   0%   { background-position: 200% 0; }
   100% { background-position: -200% 0; }
