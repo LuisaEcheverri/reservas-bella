@@ -16,7 +16,7 @@ import axios from 'axios'
 
 // ─── URL base de la API ────────────────────────────────────────────────────
 // Reemplaza con tu URL real de MockAPI
-const URL_BASE = 'https://TU_ID.mockapi.io/api/v1'
+const URL_BASE = 'https://6a12119f78d0434e0d5d12af.mockapi.io/api/v1'
 
 // ─── Instancia pre-configurada de axios ───────────────────────────────────
 const clienteApi = axios.create({
